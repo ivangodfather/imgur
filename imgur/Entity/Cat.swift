@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Cat {
+final class Cat {
     
     let imageURL: URL
     let title: String
@@ -21,6 +21,11 @@ class Cat {
         }
         self.imageURL = imageURL
         self.title = title
+    }
+    
+    class func fake() -> Cat {
+        return  Cat.init(dict: [Keys.title: "Samuel",
+                                Keys.image: "http://www.petmd.com/sites/default/files/petmd-cat-happy-13.jpg"])!
     }
 }
 

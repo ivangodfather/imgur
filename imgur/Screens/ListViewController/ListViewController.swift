@@ -11,20 +11,19 @@ import RxSwift
 import RxCocoa
 
 protocol ListViewProtocol {
-    
+    func showCats(cats: [Cat])
 }
 
 final class ListViewController: BaseViewController {
-    
-    
 
     @IBOutlet private weak var collectionView: UICollectionView!
     private var disposeBag = DisposeBag()
     
-    var cats = Variable([Cat]())
+    fileprivate var cats = Variable([Cat]())
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupCollectionView()
     }
     
     private func setupCollectionView() {
@@ -36,13 +35,15 @@ final class ListViewController: BaseViewController {
         }.disposed(by: disposeBag)
     }
     
-    init(presenter: ListViewPresenterProtocol = ListViewPresenter()) {
-        super.init(nibName: String(describing: ListViewController.self), presenter: presenter)
+    init() {
+        super.init(nibName: String(describing: ListViewController.self))
     }
     
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) not supported") }
 }
 
 extension ListViewController: ListViewProtocol {
-    
+    func showCats(cats: [Cat]) {
+        self.cats.value = cats
+    }
 }

@@ -6,13 +6,15 @@
 //  Copyright © 2017 Ivan Ruiz Monjo. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+import UIKit
 
 protocol BasePresenterProtocol {
     func viewDidLoad()
 }
 
 class BasePresenter: BasePresenterProtocol {
+    var disposeBag = DisposeBag()
     
     func viewDidLoad() {
         

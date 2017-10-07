@@ -19,10 +19,11 @@ class ListViewControllerTests: XCTestCase {
     override func setUp() {
         super.setUp()
         presenter = MockListViewPresenter()
-        sut = ListViewController.init(presenter: presenter)
+        sut = ListViewController()
+        sut.presenter = presenter
     }
     
-    func callsPresenterViewDidLoad() {
+    func testCallsPresenterViewDidLoad() {
         sut.preloadView()
         
         expect(self.presenter.viewDidLoadWasCalled).to(beTrue())

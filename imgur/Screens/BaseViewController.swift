@@ -9,12 +9,16 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    let presenter: BasePresenterProtocol
+    var presenter: BasePresenterProtocol!
+    var viewController: UIViewController!
     
-    init(nibName: String,
-         presenter: BasePresenterProtocol) {
-        self.presenter = presenter
+    init(nibName: String) {
         super.init(nibName: nibName, bundle: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter.viewDidLoad()
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -15,6 +15,8 @@ protocol ListWireframeProtocol {
 final class ListWireframe: ListWireframeProtocol {
     
     func listVC() -> UIViewController {
-        return ListViewController()
+        let listVC = ListViewController()
+        listVC.presenter = ListViewPresenter(listView: listVC)
+        return listVC
     }
 }

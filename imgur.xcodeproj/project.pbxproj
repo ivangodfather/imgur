@@ -29,6 +29,11 @@
 		42E6CBC61F88E0A5009E0241 /* ListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBC51F88E0A5009E0241 /* ListViewPresenter.swift */; };
 		42E6CBC81F88E0BC009E0241 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBC71F88E0BC009E0241 /* BasePresenter.swift */; };
 		42E6CBCB1F88E180009E0241 /* MockListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBCA1F88E180009E0241 /* MockListViewPresenter.swift */; };
+		42E6CBCE1F88E56B009E0241 /* GetCats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBCD1F88E56B009E0241 /* GetCats.swift */; };
+		42E6CBD11F88E617009E0241 /* CatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBD01F88E617009E0241 /* CatRepository.swift */; };
+		42E6CBD61F88EE73009E0241 /* MockGetCatsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBD51F88EE73009E0241 /* MockGetCatsUseCase.swift */; };
+		42E6CBD91F88EEE5009E0241 /* MockCatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBD81F88EEE5009E0241 /* MockCatRepository.swift */; };
+		42E6CBDC1F88EFCA009E0241 /* GetCatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBDB1F88EFCA009E0241 /* GetCatsTests.swift */; };
 		9F9D08F1A9951B5CD55ED035 /* Pods_imgurUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D108F75D2CDF8684E61034A3 /* Pods_imgurUITests.framework */; };
 		A8132081F58F5D3F819A54A5 /* Pods_imgur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929D30675B0A565014240D58 /* Pods_imgur.framework */; };
 		D9A34D201FD64C3B916AA466 /* Pods_imgurTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9623629D9FFD32B50B12A6 /* Pods_imgurTests.framework */; };
@@ -53,21 +58,21 @@
 
 /* Begin PBXFileReference section */
 		2B9623629D9FFD32B50B12A6 /* Pods_imgurTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imgurTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42A8F2671F88B1660050305F /* RootWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframeTests.swift; path = Wireframe/RootWireframeTests.swift; sourceTree = "<group>"; };
-		42A8F26A1F88B2880050305F /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = Wireframe/RootWireframe.swift; sourceTree = "<group>"; };
-		42A8F26C1F88B34F0050305F /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListWireframe.swift; path = Wireframe/ListWireframe.swift; sourceTree = "<group>"; };
-		42A8F2701F88B3CC0050305F /* MockListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockListWireframe.swift; path = Mocks/Wireframe/MockListWireframe.swift; sourceTree = "<group>"; };
-		42A8F2731F88B4780050305F /* MockUIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUIWindow.swift; path = Mocks/Other/MockUIWindow.swift; sourceTree = "<group>"; };
-		42A8F2751F88BA340050305F /* ListWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListWireframeTests.swift; path = Wireframe/ListWireframeTests.swift; sourceTree = "<group>"; };
-		42A8F2781F88BC990050305F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ViewController/ListViewController.swift; sourceTree = "<group>"; };
-		42A8F27B1F88C03A0050305F /* ListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewControllerTests.swift; path = ViewController/ListViewControllerTests.swift; sourceTree = "<group>"; };
-		42A8F27E1F88C0F70050305F /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListViewController.xib; path = View/ListViewController.xib; sourceTree = "<group>"; };
-		42A8F2821F88C4200050305F /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = Extensions/ViewController/UIViewControllerExtensions.swift; sourceTree = "<group>"; };
-		42A8F2841F88C7A70050305F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewController/BaseViewController.swift; sourceTree = "<group>"; };
-		42A8F2861F88CF510050305F /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCollectionViewCell.swift; path = View/ListCollectionViewCell.swift; sourceTree = "<group>"; };
-		42A8F2871F88CF510050305F /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCollectionViewCell.xib; path = View/ListCollectionViewCell.xib; sourceTree = "<group>"; };
-		42A8F28B1F88D0810050305F /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cat.swift; path = Entity/Cat.swift; sourceTree = "<group>"; };
-		42A8F28E1F88D0D70050305F /* CatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatTests.swift; path = Entity/CatTests.swift; sourceTree = "<group>"; };
+		42A8F2671F88B1660050305F /* RootWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframeTests.swift; sourceTree = "<group>"; };
+		42A8F26A1F88B2880050305F /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		42A8F26C1F88B34F0050305F /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		42A8F2701F88B3CC0050305F /* MockListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListWireframe.swift; sourceTree = "<group>"; };
+		42A8F2731F88B4780050305F /* MockUIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUIWindow.swift; sourceTree = "<group>"; };
+		42A8F2751F88BA340050305F /* ListWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframeTests.swift; sourceTree = "<group>"; };
+		42A8F2781F88BC990050305F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		42A8F27B1F88C03A0050305F /* ListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
+		42A8F27E1F88C0F70050305F /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		42A8F2821F88C4200050305F /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		42A8F2841F88C7A70050305F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		42A8F2861F88CF510050305F /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		42A8F2871F88CF510050305F /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		42A8F28B1F88D0810050305F /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		42A8F28E1F88D0D70050305F /* CatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatTests.swift; sourceTree = "<group>"; };
 		42C4AB721F88AE0B000D4282 /* imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C4AB751F88AE0B000D4282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,9 +83,14 @@
 		42C4AB911F88AE0B000D4282 /* imgurUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imgurUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C4AB951F88AE0C000D4282 /* imgurUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgurUITests.swift; sourceTree = "<group>"; };
 		42C4AB971F88AE0C000D4282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42E6CBC51F88E0A5009E0241 /* ListViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewPresenter.swift; path = ViewController/ListViewPresenter.swift; sourceTree = "<group>"; };
-		42E6CBC71F88E0BC009E0241 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasePresenter.swift; path = ViewController/BasePresenter.swift; sourceTree = "<group>"; };
-		42E6CBCA1F88E180009E0241 /* MockListViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockListViewPresenter.swift; path = Mocks/Presenter/MockListViewPresenter.swift; sourceTree = "<group>"; };
+		42E6CBC51F88E0A5009E0241 /* ListViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewPresenter.swift; sourceTree = "<group>"; };
+		42E6CBC71F88E0BC009E0241 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		42E6CBCA1F88E180009E0241 /* MockListViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListViewPresenter.swift; sourceTree = "<group>"; };
+		42E6CBCD1F88E56B009E0241 /* GetCats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCats.swift; sourceTree = "<group>"; };
+		42E6CBD01F88E617009E0241 /* CatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatRepository.swift; sourceTree = "<group>"; };
+		42E6CBD51F88EE73009E0241 /* MockGetCatsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGetCatsUseCase.swift; sourceTree = "<group>"; };
+		42E6CBD81F88EEE5009E0241 /* MockCatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCatRepository.swift; sourceTree = "<group>"; };
+		42E6CBDB1F88EFCA009E0241 /* GetCatsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCatsTests.swift; sourceTree = "<group>"; };
 		486D559263A0FBEFDD86E6B0 /* Pods-imgurUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgurUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-imgurUITests/Pods-imgurUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5FF0D6E29B71904201B6C /* Pods-imgurTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgurTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgurTests/Pods-imgurTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54EE71FC24B3B7FBE53B4992 /* Pods-imgurUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgurUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgurUITests/Pods-imgurUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,29 +132,31 @@
 		42A8F2661F88B1450050305F /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
-				42A8F2671F88B1660050305F /* RootWireframeTests.swift */,
 				42A8F2751F88BA340050305F /* ListWireframeTests.swift */,
+				42A8F2671F88B1660050305F /* RootWireframeTests.swift */,
 			);
-			name = Wireframe;
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		42A8F2691F88B2760050305F /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
-				42A8F26A1F88B2880050305F /* RootWireframe.swift */,
 				42A8F26C1F88B34F0050305F /* ListWireframe.swift */,
+				42A8F26A1F88B2880050305F /* RootWireframe.swift */,
 			);
-			name = Wireframe;
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		42A8F26E1F88B3A20050305F /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				42E6CBC91F88E169009E0241 /* Presenter */,
 				42A8F2721F88B4660050305F /* Other */,
+				42E6CBC91F88E169009E0241 /* Presenter */,
+				42E6CBD71F88EED6009E0241 /* Repository */,
+				42E6CBD41F88EE69009E0241 /* UseCase */,
 				42A8F26F1F88B3A90050305F /* Wireframe */,
 			);
-			name = Mocks;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		42A8F26F1F88B3A90050305F /* Wireframe */ = {
@@ -152,7 +164,7 @@
 			children = (
 				42A8F2701F88B3CC0050305F /* MockListWireframe.swift */,
 			);
-			name = Wireframe;
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		42A8F2721F88B4660050305F /* Other */ = {
@@ -160,17 +172,17 @@
 			children = (
 				42A8F2731F88B4780050305F /* MockUIWindow.swift */,
 			);
-			name = Other;
+			path = Other;
 			sourceTree = "<group>";
 		};
 		42A8F2771F88BC850050305F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				42A8F2841F88C7A70050305F /* BaseViewController.swift */,
 				42E6CBC31F88DFEF009E0241 /* ListViewController */,
 				42E6CBC71F88E0BC009E0241 /* BasePresenter.swift */,
+				42A8F2841F88C7A70050305F /* BaseViewController.swift */,
 			);
-			name = Screens;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		42A8F27A1F88C0260050305F /* ViewController */ = {
@@ -178,14 +190,7 @@
 			children = (
 				42A8F27B1F88C03A0050305F /* ListViewControllerTests.swift */,
 			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		42A8F27D1F88C0D40050305F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		42A8F2801F88C3AE0050305F /* Extensions */ = {
@@ -193,7 +198,7 @@
 			children = (
 				42A8F2811F88C3C70050305F /* ViewController */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		42A8F2811F88C3C70050305F /* ViewController */ = {
@@ -201,7 +206,7 @@
 			children = (
 				42A8F2821F88C4200050305F /* UIViewControllerExtensions.swift */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		42A8F28A1F88D0580050305F /* Entity */ = {
@@ -209,7 +214,7 @@
 			children = (
 				42A8F28B1F88D0810050305F /* Cat.swift */,
 			);
-			name = Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		42A8F28D1F88D0C30050305F /* Entity */ = {
@@ -217,18 +222,18 @@
 			children = (
 				42A8F28E1F88D0D70050305F /* CatTests.swift */,
 			);
-			name = Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		42C4AB691F88AE0B000D4282 = {
 			isa = PBXGroup;
 			children = (
+				8905CAA1DBFDF76D9A7B8A85 /* Frameworks */,
+				F5769D35AA84F6812913A8E3 /* Pods */,
+				42C4AB731F88AE0B000D4282 /* Products */,
 				42C4AB741F88AE0B000D4282 /* imgur */,
 				42C4AB891F88AE0B000D4282 /* imgurTests */,
 				42C4AB941F88AE0C000D4282 /* imgurUITests */,
-				42C4AB731F88AE0B000D4282 /* Products */,
-				F5769D35AA84F6812913A8E3 /* Pods */,
-				8905CAA1DBFDF76D9A7B8A85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,13 +252,14 @@
 			children = (
 				42A8F28A1F88D0580050305F /* Entity */,
 				42A8F2801F88C3AE0050305F /* Extensions */,
-				42A8F27D1F88C0D40050305F /* View */,
+				42E6CBCF1F88E609009E0241 /* Repository */,
 				42A8F2771F88BC850050305F /* Screens */,
+				42E6CBCC1F88E558009E0241 /* UseCase */,
 				42A8F2691F88B2760050305F /* Wireframe */,
 				42C4AB751F88AE0B000D4282 /* AppDelegate.swift */,
 				42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */,
-				42C4AB7E1F88AE0B000D4282 /* LaunchScreen.storyboard */,
 				42C4AB811F88AE0B000D4282 /* Info.plist */,
+				42C4AB7E1F88AE0B000D4282 /* LaunchScreen.storyboard */,
 			);
 			path = imgur;
 			sourceTree = "<group>";
@@ -262,8 +268,9 @@
 			isa = PBXGroup;
 			children = (
 				42A8F28D1F88D0C30050305F /* Entity */,
-				42A8F27A1F88C0260050305F /* ViewController */,
 				42A8F26E1F88B3A20050305F /* Mocks */,
+				42E6CBDA1F88EFB6009E0241 /* UseCase */,
+				42A8F27A1F88C0260050305F /* ViewController */,
 				42A8F2661F88B1450050305F /* Wireframe */,
 				42C4AB8C1F88AE0B000D4282 /* Info.plist */,
 			);
@@ -273,8 +280,8 @@
 		42C4AB941F88AE0C000D4282 /* imgurUITests */ = {
 			isa = PBXGroup;
 			children = (
-				42C4AB951F88AE0C000D4282 /* imgurUITests.swift */,
 				42C4AB971F88AE0C000D4282 /* Info.plist */,
+				42C4AB951F88AE0C000D4282 /* imgurUITests.swift */,
 			);
 			path = imgurUITests;
 			sourceTree = "<group>";
@@ -283,20 +290,20 @@
 			isa = PBXGroup;
 			children = (
 				42E6CBC41F88E01A009E0241 /* Cells */,
-				42A8F2861F88CF510050305F /* ListCollectionViewCell.swift */,
 				42A8F2781F88BC990050305F /* ListViewController.swift */,
+				42A8F27E1F88C0F70050305F /* ListViewController.xib */,
 				42E6CBC51F88E0A5009E0241 /* ListViewPresenter.swift */,
 			);
-			name = ListViewController;
+			path = ListViewController;
 			sourceTree = "<group>";
 		};
 		42E6CBC41F88E01A009E0241 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				42A8F27E1F88C0F70050305F /* ListViewController.xib */,
+				42A8F2861F88CF510050305F /* ListCollectionViewCell.swift */,
 				42A8F2871F88CF510050305F /* ListCollectionViewCell.xib */,
 			);
-			name = Cells;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		42E6CBC91F88E169009E0241 /* Presenter */ = {
@@ -304,7 +311,47 @@
 			children = (
 				42E6CBCA1F88E180009E0241 /* MockListViewPresenter.swift */,
 			);
-			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		42E6CBCC1F88E558009E0241 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				42E6CBCD1F88E56B009E0241 /* GetCats.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		42E6CBCF1F88E609009E0241 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				42E6CBD01F88E617009E0241 /* CatRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		42E6CBD41F88EE69009E0241 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				42E6CBD51F88EE73009E0241 /* MockGetCatsUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		42E6CBD71F88EED6009E0241 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				42E6CBD81F88EEE5009E0241 /* MockCatRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		42E6CBDA1F88EFB6009E0241 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				42E6CBDB1F88EFCA009E0241 /* GetCatsTests.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		8905CAA1DBFDF76D9A7B8A85 /* Frameworks */ = {
@@ -615,12 +662,14 @@
 				42A8F26D1F88B34F0050305F /* ListWireframe.swift in Sources */,
 				42E6CBC81F88E0BC009E0241 /* BasePresenter.swift in Sources */,
 				42A8F2881F88CF510050305F /* ListCollectionViewCell.swift in Sources */,
+				42E6CBCE1F88E56B009E0241 /* GetCats.swift in Sources */,
 				42C4AB761F88AE0B000D4282 /* AppDelegate.swift in Sources */,
 				42E6CBC61F88E0A5009E0241 /* ListViewPresenter.swift in Sources */,
 				42A8F2831F88C4200050305F /* UIViewControllerExtensions.swift in Sources */,
 				42A8F28C1F88D0810050305F /* Cat.swift in Sources */,
 				42A8F2791F88BC990050305F /* ListViewController.swift in Sources */,
 				42A8F26B1F88B2880050305F /* RootWireframe.swift in Sources */,
+				42E6CBD11F88E617009E0241 /* CatRepository.swift in Sources */,
 				42A8F2851F88C7A70050305F /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,9 +678,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E6CBD91F88EEE5009E0241 /* MockCatRepository.swift in Sources */,
+				42E6CBDC1F88EFCA009E0241 /* GetCatsTests.swift in Sources */,
 				42A8F2761F88BA340050305F /* ListWireframeTests.swift in Sources */,
 				42A8F2681F88B1660050305F /* RootWireframeTests.swift in Sources */,
 				42E6CBCB1F88E180009E0241 /* MockListViewPresenter.swift in Sources */,
+				42E6CBD61F88EE73009E0241 /* MockGetCatsUseCase.swift in Sources */,
 				42A8F28F1F88D0D70050305F /* CatTests.swift in Sources */,
 				42A8F2741F88B4780050305F /* MockUIWindow.swift in Sources */,
 				42A8F27C1F88C03A0050305F /* ListViewControllerTests.swift in Sources */,
@@ -669,6 +721,7 @@
 				42C4AB7F1F88AE0B000D4282 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
