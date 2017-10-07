@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import Kingfisher
 
-class ListCollectionViewCell: UICollectionViewCell {
+final class ListCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet private weak var listImageView: UIImageView!
+    @IBOutlet private weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func setup(_ cat: Cat) {
+        listImageView.kf.setImage(with: cat.imageURL)
+        titleLabel.text = cat.title
     }
 
 }

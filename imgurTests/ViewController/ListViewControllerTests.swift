@@ -14,12 +14,19 @@ import  Nimble
 class ListViewControllerTests: XCTestCase {
     
     var sut: ListViewController!
+    var presenter: MockListViewPresenter!
     
     override func setUp() {
         super.setUp()
-        sut = ListViewController()
+        presenter = MockListViewPresenter()
+        sut = ListViewController.init(presenter: presenter)
     }
     
+    func callsPresenterViewDidLoad() {
+        sut.preloadView()
+        
+        expect(self.presenter.viewDidLoadWasCalled).to(beTrue())
+    }
 }
 
 

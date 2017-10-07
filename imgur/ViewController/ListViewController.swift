@@ -7,51 +7,37 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 protocol ListViewProtocol {
     
 }
 
 final class ListViewController: BaseViewController {
+    
+    
 
     @IBOutlet private weak var collectionView: UICollectionView!
+    private var disposeBag = DisposeBag()
+    
+    var cats = Variable([Cat]())
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     private func setupCollectionView() {
-        let cellNib = UINib(nibName: String(describing: ListCollectionViewCell.self), bundle: Bundle.main)
-        collectionView.register(cellNib, forCellWithReuseIdentifier: String(describing: ListCollectionViewCell.self))
-        
-        /*
- 
-         private func setupTableView() {
-         let nib = UINib(nibName: TWListTableViewCell.cellId, bundle: Bundle.main)
-         listTableView.register(nib, forCellReuseIdentifier: TWListTableViewCell.cellId)
-         
-         itemsList
-         .asObservable()
-         .bindTo(listTableView
-         .rx
-         .items(cellIdentifier: TWListTableViewCell.cellId,
-         cellType: TWListTableViewCell.self)) { row, itemList, cell in
-         cell.configure(itemList)
-         }.addDisposableTo(disposeBag)
-         listTableView
-         .rx
-         .modelSelected(ItemList.self)
-         .subscribe(onNext: { itemList in
-         self.presenter.didTap(itemList: itemList)
-         }).addDisposableTo(disposeBag)
-         searchTextField.delegate = self
-         }
-
- */
+        let nibName = String(describing: ListCollectionViewCell.self)
+        let cellNib = UINib(nibName: nibName, bundle: Bundle.main)
+        collectionView.register(cellNib, forCellWithReuseIdentifier: nibName)
+        cats.asObservable().bind(to: collectionView.rx.items(cellIdentifier: nibName, cellType: ListCollectionViewCell.self)) { row, cat, cell in
+            cell.setup(cat)
+        }.disposed(by: disposeBag)
     }
     
-    init() {
-        super.init(nibName: String(describing: ListViewController.self), bundle: nil)
+    init(presenter: ListViewPresenterProtocol = ListViewPresenter()) {
+        super.init(nibName: String(describing: ListViewController.self), presenter: presenter)
     }
     
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) not supported") }
