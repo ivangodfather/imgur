@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42A8F2681F88B1660050305F /* RootWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2671F88B1660050305F /* RootWireframeTests.swift */; };
+		42A8F26B1F88B2880050305F /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F26A1F88B2880050305F /* RootWireframe.swift */; };
+		42A8F26D1F88B34F0050305F /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F26C1F88B34F0050305F /* ListWireframe.swift */; };
+		42A8F2711F88B3CC0050305F /* MockListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2701F88B3CC0050305F /* MockListWireframe.swift */; };
+		42A8F2741F88B4780050305F /* MockUIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2731F88B4780050305F /* MockUIWindow.swift */; };
+		42A8F2761F88BA340050305F /* ListWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2751F88BA340050305F /* ListWireframeTests.swift */; };
+		42A8F2791F88BC990050305F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2781F88BC990050305F /* ListViewController.swift */; };
 		42C4AB761F88AE0B000D4282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4AB751F88AE0B000D4282 /* AppDelegate.swift */; };
-		42C4AB781F88AE0B000D4282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4AB771F88AE0B000D4282 /* ViewController.swift */; };
 		42C4AB7B1F88AE0B000D4282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C4AB791F88AE0B000D4282 /* Main.storyboard */; };
 		42C4AB7D1F88AE0B000D4282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */; };
 		42C4AB801F88AE0B000D4282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C4AB7E1F88AE0B000D4282 /* LaunchScreen.storyboard */; };
-		42C4AB8B1F88AE0B000D4282 /* imgurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4AB8A1F88AE0B000D4282 /* imgurTests.swift */; };
 		42C4AB961F88AE0C000D4282 /* imgurUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4AB951F88AE0C000D4282 /* imgurUITests.swift */; };
 		9F9D08F1A9951B5CD55ED035 /* Pods_imgurUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D108F75D2CDF8684E61034A3 /* Pods_imgurUITests.framework */; };
 		A8132081F58F5D3F819A54A5 /* Pods_imgur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929D30675B0A565014240D58 /* Pods_imgur.framework */; };
@@ -38,15 +43,20 @@
 
 /* Begin PBXFileReference section */
 		2B9623629D9FFD32B50B12A6 /* Pods_imgurTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imgurTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A8F2671F88B1660050305F /* RootWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframeTests.swift; path = Wireframe/RootWireframeTests.swift; sourceTree = "<group>"; };
+		42A8F26A1F88B2880050305F /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = Wireframe/RootWireframe.swift; sourceTree = "<group>"; };
+		42A8F26C1F88B34F0050305F /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListWireframe.swift; path = Wireframe/ListWireframe.swift; sourceTree = "<group>"; };
+		42A8F2701F88B3CC0050305F /* MockListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockListWireframe.swift; path = Mocks/Wireframe/MockListWireframe.swift; sourceTree = "<group>"; };
+		42A8F2731F88B4780050305F /* MockUIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUIWindow.swift; path = Mocks/Other/MockUIWindow.swift; sourceTree = "<group>"; };
+		42A8F2751F88BA340050305F /* ListWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListWireframeTests.swift; path = Wireframe/ListWireframeTests.swift; sourceTree = "<group>"; };
+		42A8F2781F88BC990050305F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ViewController/ListViewController.swift; sourceTree = "<group>"; };
 		42C4AB721F88AE0B000D4282 /* imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C4AB751F88AE0B000D4282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42C4AB771F88AE0B000D4282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42C4AB7A1F88AE0B000D4282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42C4AB7F1F88AE0B000D4282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42C4AB811F88AE0B000D4282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42C4AB861F88AE0B000D4282 /* imgurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imgurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42C4AB8A1F88AE0B000D4282 /* imgurTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgurTests.swift; sourceTree = "<group>"; };
 		42C4AB8C1F88AE0B000D4282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42C4AB911F88AE0B000D4282 /* imgurUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imgurUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C4AB951F88AE0C000D4282 /* imgurUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgurUITests.swift; sourceTree = "<group>"; };
@@ -89,6 +99,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42A8F2661F88B1450050305F /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F2671F88B1660050305F /* RootWireframeTests.swift */,
+				42A8F2751F88BA340050305F /* ListWireframeTests.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		42A8F2691F88B2760050305F /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F26A1F88B2880050305F /* RootWireframe.swift */,
+				42A8F26C1F88B34F0050305F /* ListWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		42A8F26E1F88B3A20050305F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F2721F88B4660050305F /* Other */,
+				42A8F26F1F88B3A90050305F /* Wireframe */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		42A8F26F1F88B3A90050305F /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F2701F88B3CC0050305F /* MockListWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		42A8F2721F88B4660050305F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F2731F88B4780050305F /* MockUIWindow.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		42A8F2771F88BC850050305F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F2781F88BC990050305F /* ListViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		42C4AB691F88AE0B000D4282 = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +175,9 @@
 		42C4AB741F88AE0B000D4282 /* imgur */ = {
 			isa = PBXGroup;
 			children = (
+				42A8F2771F88BC850050305F /* ViewController */,
+				42A8F2691F88B2760050305F /* Wireframe */,
 				42C4AB751F88AE0B000D4282 /* AppDelegate.swift */,
-				42C4AB771F88AE0B000D4282 /* ViewController.swift */,
 				42C4AB791F88AE0B000D4282 /* Main.storyboard */,
 				42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */,
 				42C4AB7E1F88AE0B000D4282 /* LaunchScreen.storyboard */,
@@ -127,7 +189,8 @@
 		42C4AB891F88AE0B000D4282 /* imgurTests */ = {
 			isa = PBXGroup;
 			children = (
-				42C4AB8A1F88AE0B000D4282 /* imgurTests.swift */,
+				42A8F26E1F88B3A20050305F /* Mocks */,
+				42A8F2661F88B1450050305F /* Wireframe */,
 				42C4AB8C1F88AE0B000D4282 /* Info.plist */,
 			);
 			path = imgurTests;
@@ -446,8 +509,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C4AB781F88AE0B000D4282 /* ViewController.swift in Sources */,
+				42A8F26D1F88B34F0050305F /* ListWireframe.swift in Sources */,
 				42C4AB761F88AE0B000D4282 /* AppDelegate.swift in Sources */,
+				42A8F2791F88BC990050305F /* ListViewController.swift in Sources */,
+				42A8F26B1F88B2880050305F /* RootWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +520,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C4AB8B1F88AE0B000D4282 /* imgurTests.swift in Sources */,
+				42A8F2761F88BA340050305F /* ListWireframeTests.swift in Sources */,
+				42A8F2681F88B1660050305F /* RootWireframeTests.swift in Sources */,
+				42A8F2741F88B4780050305F /* MockUIWindow.swift in Sources */,
+				42A8F2711F88B3CC0050305F /* MockListWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
