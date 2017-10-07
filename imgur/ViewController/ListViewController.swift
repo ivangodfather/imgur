@@ -12,8 +12,17 @@ protocol ListViewProtocol {
     
 }
 
-class ListViewController: UIViewController {
+final class ListViewController: BaseViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
+    init() {
+        super.init(nibName: String(describing: ListViewController.self), bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) not supported") }
 }
 
 extension ListViewController: ListViewProtocol {

@@ -8,10 +8,10 @@
 
 import UIKit
 
-class RootWireframe {
+final class RootWireframe {
     
-    let window: UIWindow
-    let listWireframe: ListWireframeProtocol
+    private let window: UIWindow
+    private let listWireframe: ListWireframeProtocol
     
     init(window: UIWindow,
          listWireframe: ListWireframeProtocol = ListWireframe()) {

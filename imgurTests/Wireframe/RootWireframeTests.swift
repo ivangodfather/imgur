@@ -31,6 +31,6 @@ class RootWireframeTests: XCTestCase {
         
         sut.showFirstViewController()
         
-        expect(self.sut.window.rootViewController).to(equal(listVC))
+        expect(self.uiWindow.rootViewController).to(equal(listVC))
     }
 }

@@ -12,15 +12,9 @@ protocol ListWireframeProtocol {
     func listVC() -> UIViewController
 }
 
-class ListWireframe: ListWireframeProtocol {
-    
-    struct Identifiers {
-        static let list = "List"
-    }
-    
-    private lazy var stortyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+final class ListWireframe: ListWireframeProtocol {
     
     func listVC() -> UIViewController {
-        return stortyBoard.instantiateViewController(withIdentifier: Identifiers.list)
+        return ListViewController()
     }
 }

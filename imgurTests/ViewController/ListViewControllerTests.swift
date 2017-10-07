@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import  Nimble
 @testable import imgur
 
 class ListViewControllerTests: XCTestCase {
@@ -19,9 +20,7 @@ class ListViewControllerTests: XCTestCase {
         sut = ListViewController()
     }
     
-    func testCollectionViewIsNotNilAfterLoad() {
-        
-    }
+
 }
 
 
