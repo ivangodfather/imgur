@@ -20,7 +20,6 @@ class ListViewControllerTests: XCTestCase {
         sut = ListViewController()
     }
     
-
 }
 
 

@@ -18,6 +18,10 @@
 		42A8F27F1F88C0F70050305F /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A8F27E1F88C0F70050305F /* ListViewController.xib */; };
 		42A8F2831F88C4200050305F /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2821F88C4200050305F /* UIViewControllerExtensions.swift */; };
 		42A8F2851F88C7A70050305F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2841F88C7A70050305F /* BaseViewController.swift */; };
+		42A8F2881F88CF510050305F /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2861F88CF510050305F /* ListCollectionViewCell.swift */; };
+		42A8F2891F88CF510050305F /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A8F2871F88CF510050305F /* ListCollectionViewCell.xib */; };
+		42A8F28C1F88D0810050305F /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F28B1F88D0810050305F /* Cat.swift */; };
+		42A8F28F1F88D0D70050305F /* CatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F28E1F88D0D70050305F /* CatTests.swift */; };
 		42C4AB761F88AE0B000D4282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4AB751F88AE0B000D4282 /* AppDelegate.swift */; };
 		42C4AB7D1F88AE0B000D4282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */; };
 		42C4AB801F88AE0B000D4282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C4AB7E1F88AE0B000D4282 /* LaunchScreen.storyboard */; };
@@ -57,6 +61,10 @@
 		42A8F27E1F88C0F70050305F /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListViewController.xib; path = View/ListViewController.xib; sourceTree = "<group>"; };
 		42A8F2821F88C4200050305F /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = Extensions/ViewController/UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		42A8F2841F88C7A70050305F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewController/BaseViewController.swift; sourceTree = "<group>"; };
+		42A8F2861F88CF510050305F /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCollectionViewCell.swift; path = View/ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		42A8F2871F88CF510050305F /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCollectionViewCell.xib; path = View/ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		42A8F28B1F88D0810050305F /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cat.swift; path = Entity/Cat.swift; sourceTree = "<group>"; };
+		42A8F28E1F88D0D70050305F /* CatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatTests.swift; path = Entity/CatTests.swift; sourceTree = "<group>"; };
 		42C4AB721F88AE0B000D4282 /* imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C4AB751F88AE0B000D4282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				42A8F27E1F88C0F70050305F /* ListViewController.xib */,
+				42A8F2861F88CF510050305F /* ListCollectionViewCell.swift */,
+				42A8F2871F88CF510050305F /* ListCollectionViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -187,6 +197,22 @@
 				42A8F2821F88C4200050305F /* UIViewControllerExtensions.swift */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		42A8F28A1F88D0580050305F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F28B1F88D0810050305F /* Cat.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		42A8F28D1F88D0C30050305F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F28E1F88D0D70050305F /* CatTests.swift */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 		42C4AB691F88AE0B000D4282 = {
@@ -214,6 +240,7 @@
 		42C4AB741F88AE0B000D4282 /* imgur */ = {
 			isa = PBXGroup;
 			children = (
+				42A8F28A1F88D0580050305F /* Entity */,
 				42A8F2801F88C3AE0050305F /* Extensions */,
 				42A8F27D1F88C0D40050305F /* View */,
 				42A8F2771F88BC850050305F /* ViewController */,
@@ -229,6 +256,7 @@
 		42C4AB891F88AE0B000D4282 /* imgurTests */ = {
 			isa = PBXGroup;
 			children = (
+				42A8F28D1F88D0C30050305F /* Entity */,
 				42A8F27A1F88C0260050305F /* ViewController */,
 				42A8F26E1F88B3A20050305F /* Mocks */,
 				42A8F2661F88B1450050305F /* Wireframe */,
@@ -387,6 +415,7 @@
 			files = (
 				42C4AB801F88AE0B000D4282 /* LaunchScreen.storyboard in Resources */,
 				42A8F27F1F88C0F70050305F /* ListViewController.xib in Resources */,
+				42A8F2891F88CF510050305F /* ListCollectionViewCell.xib in Resources */,
 				42C4AB7D1F88AE0B000D4282 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,8 +580,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A8F26D1F88B34F0050305F /* ListWireframe.swift in Sources */,
+				42A8F2881F88CF510050305F /* ListCollectionViewCell.swift in Sources */,
 				42C4AB761F88AE0B000D4282 /* AppDelegate.swift in Sources */,
 				42A8F2831F88C4200050305F /* UIViewControllerExtensions.swift in Sources */,
+				42A8F28C1F88D0810050305F /* Cat.swift in Sources */,
 				42A8F2791F88BC990050305F /* ListViewController.swift in Sources */,
 				42A8F26B1F88B2880050305F /* RootWireframe.swift in Sources */,
 				42A8F2851F88C7A70050305F /* BaseViewController.swift in Sources */,
@@ -565,6 +596,7 @@
 			files = (
 				42A8F2761F88BA340050305F /* ListWireframeTests.swift in Sources */,
 				42A8F2681F88B1660050305F /* RootWireframeTests.swift in Sources */,
+				42A8F28F1F88D0D70050305F /* CatTests.swift in Sources */,
 				42A8F2741F88B4780050305F /* MockUIWindow.swift in Sources */,
 				42A8F27C1F88C03A0050305F /* ListViewControllerTests.swift in Sources */,
 				42A8F2711F88B3CC0050305F /* MockListWireframe.swift in Sources */,

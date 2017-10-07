@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="imgur" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="lfe-0T-clI" id="eKn-tc-RQM"/>
                 <outlet property="view" destination="iN0-l3-epB" id="CV9-m5-FV2"/>
             </connections>
         </placeholder>
@@ -19,15 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQl-GK-Lo3">
-                    <rect key="frame" x="185" y="286" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lfe-0T-clI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ggq-44-eY0">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lfe-0T-clI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DzR-qZ-0ai"/>
+                <constraint firstItem="lfe-0T-clI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RjS-bR-4lu"/>
+                <constraint firstAttribute="trailing" secondItem="lfe-0T-clI" secondAttribute="trailing" id="UtX-Z7-HEp"/>
+                <constraint firstAttribute="bottom" secondItem="lfe-0T-clI" secondAttribute="bottom" id="fmX-WA-ifo"/>
+            </constraints>
         </view>
     </objects>
 </document>
