@@ -14,6 +14,8 @@
 		42A8F2741F88B4780050305F /* MockUIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2731F88B4780050305F /* MockUIWindow.swift */; };
 		42A8F2761F88BA340050305F /* ListWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2751F88BA340050305F /* ListWireframeTests.swift */; };
 		42A8F2791F88BC990050305F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2781F88BC990050305F /* ListViewController.swift */; };
+		42A8F27C1F88C03A0050305F /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F27B1F88C03A0050305F /* ListViewControllerTests.swift */; };
+		42A8F27F1F88C0F70050305F /* ListViewContronller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A8F27E1F88C0F70050305F /* ListViewContronller.xib */; };
 		42C4AB761F88AE0B000D4282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4AB751F88AE0B000D4282 /* AppDelegate.swift */; };
 		42C4AB7B1F88AE0B000D4282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C4AB791F88AE0B000D4282 /* Main.storyboard */; };
 		42C4AB7D1F88AE0B000D4282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		42A8F2731F88B4780050305F /* MockUIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUIWindow.swift; path = Mocks/Other/MockUIWindow.swift; sourceTree = "<group>"; };
 		42A8F2751F88BA340050305F /* ListWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListWireframeTests.swift; path = Wireframe/ListWireframeTests.swift; sourceTree = "<group>"; };
 		42A8F2781F88BC990050305F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ViewController/ListViewController.swift; sourceTree = "<group>"; };
+		42A8F27B1F88C03A0050305F /* ListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewControllerTests.swift; path = ViewController/ListViewControllerTests.swift; sourceTree = "<group>"; };
+		42A8F27E1F88C0F70050305F /* ListViewContronller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListViewContronller.xib; path = View/ListViewContronller.xib; sourceTree = "<group>"; };
 		42C4AB721F88AE0B000D4282 /* imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C4AB751F88AE0B000D4282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42C4AB7A1F88AE0B000D4282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -150,6 +154,22 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		42A8F27A1F88C0260050305F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F27B1F88C03A0050305F /* ListViewControllerTests.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		42A8F27D1F88C0D40050305F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F27E1F88C0F70050305F /* ListViewContronller.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		42C4AB691F88AE0B000D4282 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +195,7 @@
 		42C4AB741F88AE0B000D4282 /* imgur */ = {
 			isa = PBXGroup;
 			children = (
+				42A8F27D1F88C0D40050305F /* View */,
 				42A8F2771F88BC850050305F /* ViewController */,
 				42A8F2691F88B2760050305F /* Wireframe */,
 				42C4AB751F88AE0B000D4282 /* AppDelegate.swift */,
@@ -189,6 +210,7 @@
 		42C4AB891F88AE0B000D4282 /* imgurTests */ = {
 			isa = PBXGroup;
 			children = (
+				42A8F27A1F88C0260050305F /* ViewController */,
 				42A8F26E1F88B3A20050305F /* Mocks */,
 				42A8F2661F88B1450050305F /* Wireframe */,
 				42C4AB8C1F88AE0B000D4282 /* Info.plist */,
@@ -345,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C4AB801F88AE0B000D4282 /* LaunchScreen.storyboard in Resources */,
+				42A8F27F1F88C0F70050305F /* ListViewContronller.xib in Resources */,
 				42C4AB7D1F88AE0B000D4282 /* Assets.xcassets in Resources */,
 				42C4AB7B1F88AE0B000D4282 /* Main.storyboard in Resources */,
 			);
@@ -523,6 +546,7 @@
 				42A8F2761F88BA340050305F /* ListWireframeTests.swift in Sources */,
 				42A8F2681F88B1660050305F /* RootWireframeTests.swift in Sources */,
 				42A8F2741F88B4780050305F /* MockUIWindow.swift in Sources */,
+				42A8F27C1F88C03A0050305F /* ListViewControllerTests.swift in Sources */,
 				42A8F2711F88B3CC0050305F /* MockListWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
