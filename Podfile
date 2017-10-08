@@ -8,9 +8,9 @@ target 'imgur' do
   # Pods for imgur
     pod 'RxSwift'
     pod 'RxCocoa'
-    pod 'Moya'
-    pod 'Kingfisher'
-
+    pod 'Moya', '8.0.5'
+    pod 'Moya/RxSwift'
+    pod 'Kingfisher', '3.12.1'
 
   target 'imgurTests' do
     inherit! :search_paths

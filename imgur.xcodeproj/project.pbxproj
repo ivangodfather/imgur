@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4258B43C1F8A608800F9A5A1 /* CatRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258B43B1F8A608800F9A5A1 /* CatRepositoryTests.swift */; };
+		4258B43E1F8A617100F9A5A1 /* ImgurApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258B43D1F8A617100F9A5A1 /* ImgurApiProtocol.swift */; };
 		42A8F2681F88B1660050305F /* RootWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F2671F88B1660050305F /* RootWireframeTests.swift */; };
 		42A8F26B1F88B2880050305F /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F26A1F88B2880050305F /* RootWireframe.swift */; };
 		42A8F26D1F88B34F0050305F /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F26C1F88B34F0050305F /* ListWireframe.swift */; };
@@ -34,6 +36,8 @@
 		42E6CBD61F88EE73009E0241 /* MockGetCatsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBD51F88EE73009E0241 /* MockGetCatsUseCase.swift */; };
 		42E6CBD91F88EEE5009E0241 /* MockCatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBD81F88EEE5009E0241 /* MockCatRepository.swift */; };
 		42E6CBDC1F88EFCA009E0241 /* GetCatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBDB1F88EFCA009E0241 /* GetCatsTests.swift */; };
+		42E6CBDF1F8941CE009E0241 /* ImgurMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBDE1F8941CE009E0241 /* ImgurMoya.swift */; };
+		42E6CBE21F8945DE009E0241 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6CBE11F8945DE009E0241 /* Errors.swift */; };
 		9F9D08F1A9951B5CD55ED035 /* Pods_imgurUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D108F75D2CDF8684E61034A3 /* Pods_imgurUITests.framework */; };
 		A8132081F58F5D3F819A54A5 /* Pods_imgur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929D30675B0A565014240D58 /* Pods_imgur.framework */; };
 		D9A34D201FD64C3B916AA466 /* Pods_imgurTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9623629D9FFD32B50B12A6 /* Pods_imgurTests.framework */; };
@@ -58,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		2B9623629D9FFD32B50B12A6 /* Pods_imgurTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imgurTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4258B43B1F8A608800F9A5A1 /* CatRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatRepositoryTests.swift; path = Repository/CatRepositoryTests.swift; sourceTree = "<group>"; };
+		4258B43D1F8A617100F9A5A1 /* ImgurApiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgurApiProtocol.swift; path = API/ImgurApiProtocol.swift; sourceTree = "<group>"; };
 		42A8F2671F88B1660050305F /* RootWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframeTests.swift; sourceTree = "<group>"; };
 		42A8F26A1F88B2880050305F /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		42A8F26C1F88B34F0050305F /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 		42E6CBD51F88EE73009E0241 /* MockGetCatsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGetCatsUseCase.swift; sourceTree = "<group>"; };
 		42E6CBD81F88EEE5009E0241 /* MockCatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCatRepository.swift; sourceTree = "<group>"; };
 		42E6CBDB1F88EFCA009E0241 /* GetCatsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCatsTests.swift; sourceTree = "<group>"; };
+		42E6CBDE1F8941CE009E0241 /* ImgurMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgurMoya.swift; path = API/ImgurMoya.swift; sourceTree = "<group>"; };
+		42E6CBE11F8945DE009E0241 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		486D559263A0FBEFDD86E6B0 /* Pods-imgurUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgurUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-imgurUITests/Pods-imgurUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5FF0D6E29B71904201B6C /* Pods-imgurTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgurTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgurTests/Pods-imgurTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54EE71FC24B3B7FBE53B4992 /* Pods-imgurUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgurUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgurUITests/Pods-imgurUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +137,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4258B43A1F8A607600F9A5A1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4258B43B1F8A608800F9A5A1 /* CatRepositoryTests.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
 		42A8F2661F88B1450050305F /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +266,8 @@
 		42C4AB741F88AE0B000D4282 /* imgur */ = {
 			isa = PBXGroup;
 			children = (
+				42E6CBE01F8942DB009E0241 /* Resources */,
+				42E6CBDD1F894142009E0241 /* API */,
 				42A8F28A1F88D0580050305F /* Entity */,
 				42A8F2801F88C3AE0050305F /* Extensions */,
 				42E6CBCF1F88E609009E0241 /* Repository */,
@@ -257,7 +275,6 @@
 				42E6CBCC1F88E558009E0241 /* UseCase */,
 				42A8F2691F88B2760050305F /* Wireframe */,
 				42C4AB751F88AE0B000D4282 /* AppDelegate.swift */,
-				42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */,
 				42C4AB811F88AE0B000D4282 /* Info.plist */,
 				42C4AB7E1F88AE0B000D4282 /* LaunchScreen.storyboard */,
 			);
@@ -267,6 +284,7 @@
 		42C4AB891F88AE0B000D4282 /* imgurTests */ = {
 			isa = PBXGroup;
 			children = (
+				4258B43A1F8A607600F9A5A1 /* Repository */,
 				42A8F28D1F88D0C30050305F /* Entity */,
 				42A8F26E1F88B3A20050305F /* Mocks */,
 				42E6CBDA1F88EFB6009E0241 /* UseCase */,
@@ -352,6 +370,24 @@
 				42E6CBDB1F88EFCA009E0241 /* GetCatsTests.swift */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		42E6CBDD1F894142009E0241 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				42E6CBDE1F8941CE009E0241 /* ImgurMoya.swift */,
+				4258B43D1F8A617100F9A5A1 /* ImgurApiProtocol.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		42E6CBE01F8942DB009E0241 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */,
+				42E6CBE11F8945DE009E0241 /* Errors.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		8905CAA1DBFDF76D9A7B8A85 /* Frameworks */ = {
@@ -454,7 +490,7 @@
 				TargetAttributes = {
 					42C4AB711F88AE0B000D4282 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					42C4AB851F88AE0B000D4282 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -665,7 +701,10 @@
 				42E6CBCE1F88E56B009E0241 /* GetCats.swift in Sources */,
 				42C4AB761F88AE0B000D4282 /* AppDelegate.swift in Sources */,
 				42E6CBC61F88E0A5009E0241 /* ListViewPresenter.swift in Sources */,
+				42E6CBE21F8945DE009E0241 /* Errors.swift in Sources */,
+				4258B43E1F8A617100F9A5A1 /* ImgurApiProtocol.swift in Sources */,
 				42A8F2831F88C4200050305F /* UIViewControllerExtensions.swift in Sources */,
+				42E6CBDF1F8941CE009E0241 /* ImgurMoya.swift in Sources */,
 				42A8F28C1F88D0810050305F /* Cat.swift in Sources */,
 				42A8F2791F88BC990050305F /* ListViewController.swift in Sources */,
 				42A8F26B1F88B2880050305F /* RootWireframe.swift in Sources */,
@@ -681,6 +720,7 @@
 				42E6CBD91F88EEE5009E0241 /* MockCatRepository.swift in Sources */,
 				42E6CBDC1F88EFCA009E0241 /* GetCatsTests.swift in Sources */,
 				42A8F2761F88BA340050305F /* ListWireframeTests.swift in Sources */,
+				4258B43C1F8A608800F9A5A1 /* CatRepositoryTests.swift in Sources */,
 				42A8F2681F88B1660050305F /* RootWireframeTests.swift in Sources */,
 				42E6CBCB1F88E180009E0241 /* MockListViewPresenter.swift in Sources */,
 				42E6CBD61F88EE73009E0241 /* MockGetCatsUseCase.swift in Sources */,
@@ -825,6 +865,7 @@
 			baseConfigurationReference = 63B2BB47916826609F7D2420 /* Pods-imgur.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = imgur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ivan.imgur;
@@ -838,6 +879,7 @@
 			baseConfigurationReference = C72F14307B957A99ABBBD17B /* Pods-imgur.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = imgur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ivan.imgur;

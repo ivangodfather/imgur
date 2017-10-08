@@ -8,13 +8,27 @@
 
 import Foundation
 import RxSwift
+import Moya
+import Alamofire
 
 protocol CatRepositoryProtocol {
     func cats() -> Observable<[Cat]>
 }
 
 final class CatRepository: CatRepositoryProtocol {
+    
+    let imgurAPI: ImgurApiProtocol
+    
+    init(imgurAPI: ImgurApiProtocol = ImgurMoya()) {
+        self.imgurAPI = imgurAPI
+    }
+    
     func cats() -> Observable<[Cat]> {
-        return Observable.just([Cat.init(dict: ["title": "My Cat", "image": "http://www.petmd.com/sites/default/files/petmd-cat-happy-13.jpg"])!])
+        return imgurAPI.getTopCats().map { json in
+            if let json = json as? [[String: Any]] {
+                return json.flatMap { Cat.init(dict: $0) }
+            }
+            throw ImgurError.invalidJSON
+        }
     }
 }
