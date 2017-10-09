@@ -12,6 +12,7 @@ import RxCocoa
 
 protocol ListViewProtocol {
     func showCats(cats: [Cat])
+    func setTopTitle(_ title: String)
 }
 
 final class ListViewController: BaseViewController {
@@ -29,6 +30,7 @@ final class ListViewController: BaseViewController {
     private func setupCollectionView() {
         let nibName = String(describing: ListCollectionViewCell.self)
         let cellNib = UINib(nibName: nibName, bundle: Bundle.main)
+        collectionView.delegate = self
         collectionView.register(cellNib, forCellWithReuseIdentifier: nibName)
         cats.asObservable().bind(to: collectionView.rx.items(cellIdentifier: nibName, cellType: ListCollectionViewCell.self)) { row, cat, cell in
             cell.setup(cat)
@@ -43,7 +45,18 @@ final class ListViewController: BaseViewController {
 }
 
 extension ListViewController: ListViewProtocol {
+    func setTopTitle(_ title: String) {
+        self.title = title
+    }
+
     func showCats(cats: [Cat]) {
         self.cats.value = cats
+    }
+}
+
+extension ListViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.size.width / 2.2
+        return CGSize(width: width, height: width * 1.4)
     }
 }

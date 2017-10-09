@@ -20,6 +20,6 @@ final class RootWireframe {
     }
     
     func showFirstViewController() {
-        window.rootViewController = listWireframe.listVC()
+        window.rootViewController = UINavigationController(rootViewController: listWireframe.listVC())
     }
 }

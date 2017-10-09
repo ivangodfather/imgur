@@ -26,9 +26,18 @@ class CatTests: XCTestCase {
         expect(self.sut.imageURL.absoluteString).to(equal(anyImageURL))
     }
     
+    func testDoesntCreateACatWithoutImage() {
+        sut = Cat(dict: inValidDict())
+        
+        expect(self.sut).to(beNil())
+    }
+    
     private func validDict() -> [String: Any] {
         return [Cat.Keys.title: anyName,
                 Cat.Keys.image: anyImageURL]
     }
     
+    private func inValidDict() -> [String: Any] {
+        return [Cat.Keys.title: anyName]
+    }
 }

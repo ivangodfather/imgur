@@ -30,5 +30,6 @@ final class ListViewPresenter: BasePresenter, ListViewPresenterProtocol {
         }, onError: { error in
         
         }).disposed(by: disposeBag)
+        listView.setTopTitle("Cats")
     }
 }

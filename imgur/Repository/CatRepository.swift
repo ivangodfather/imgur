@@ -25,6 +25,7 @@ final class CatRepository: CatRepositoryProtocol {
     
     func cats() -> Observable<[Cat]> {
         return imgurAPI.getTopCats().map { json in
+            print(json)
             if let json = json as? [[String: Any]] {
                 return json.flatMap { Cat.init(dict: $0) }
             }
