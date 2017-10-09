@@ -65,7 +65,7 @@
 
 /* Begin PBXFileReference section */
 		2B9623629D9FFD32B50B12A6 /* Pods_imgurTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imgurTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4258B43D1F8A617100F9A5A1 /* ImgurApiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgurApiProtocol.swift; path = API/ImgurApiProtocol.swift; sourceTree = "<group>"; };
+		4258B43D1F8A617100F9A5A1 /* ImgurApiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgurApiProtocol.swift; sourceTree = "<group>"; };
 		429C0B7D1F8C03C500BB5CD0 /* ListViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewPresenterTests.swift; sourceTree = "<group>"; };
 		429C0B801F8C066600BB5CD0 /* MockListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListView.swift; sourceTree = "<group>"; };
 		42A8F2671F88B1660050305F /* RootWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframeTests.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		42E6CBD51F88EE73009E0241 /* MockGetCatsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGetCatsUseCase.swift; sourceTree = "<group>"; };
 		42E6CBD81F88EEE5009E0241 /* MockCatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCatRepository.swift; sourceTree = "<group>"; };
 		42E6CBDB1F88EFCA009E0241 /* GetCatsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCatsTests.swift; sourceTree = "<group>"; };
-		42E6CBDE1F8941CE009E0241 /* ImgurMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgurMoya.swift; path = API/ImgurMoya.swift; sourceTree = "<group>"; };
+		42E6CBDE1F8941CE009E0241 /* ImgurMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgurMoya.swift; sourceTree = "<group>"; };
 		42E6CBE11F8945DE009E0241 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		42F9DA1D1F8BE6FD005E28B0 /* ApiMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMoya.swift; sourceTree = "<group>"; };
 		42F9DA1F1F8BE723005E28B0 /* cats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cats.json; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 			children = (
 				429C0B7D1F8C03C500BB5CD0 /* ListViewPresenterTests.swift */,
 			);
-			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		429C0B7F1F8C065300BB5CD0 /* View */ = {
@@ -156,7 +156,7 @@
 			children = (
 				429C0B801F8C066600BB5CD0 /* MockListView.swift */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		42A8F2661F88B1450050305F /* Wireframe */ = {
@@ -180,11 +180,11 @@
 		42A8F26E1F88B3A20050305F /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				429C0B7F1F8C065300BB5CD0 /* View */,
 				42A8F2721F88B4660050305F /* Other */,
 				42E6CBC91F88E169009E0241 /* Presenter */,
 				42E6CBD71F88EED6009E0241 /* Repository */,
 				42E6CBD41F88EE69009E0241 /* UseCase */,
+				429C0B7F1F8C065300BB5CD0 /* View */,
 				42A8F26F1F88B3A90050305F /* Wireframe */,
 			);
 			path = Mocks;
@@ -281,11 +281,11 @@
 		42C4AB741F88AE0B000D4282 /* imgur */ = {
 			isa = PBXGroup;
 			children = (
-				42E6CBE01F8942DB009E0241 /* Resources */,
 				42E6CBDD1F894142009E0241 /* API */,
 				42A8F28A1F88D0580050305F /* Entity */,
 				42A8F2801F88C3AE0050305F /* Extensions */,
 				42E6CBCF1F88E609009E0241 /* Repository */,
+				42E6CBE01F8942DB009E0241 /* Resources */,
 				42A8F2771F88BC850050305F /* Screens */,
 				42E6CBCC1F88E558009E0241 /* UseCase */,
 				42A8F2691F88B2760050305F /* Wireframe */,
@@ -299,9 +299,9 @@
 		42C4AB891F88AE0B000D4282 /* imgurTests */ = {
 			isa = PBXGroup;
 			children = (
-				429C0B7C1F8C03BA00BB5CD0 /* Presenter */,
 				42A8F28D1F88D0C30050305F /* Entity */,
 				42A8F26E1F88B3A20050305F /* Mocks */,
+				429C0B7C1F8C03BA00BB5CD0 /* Presenter */,
 				42E6CBDA1F88EFB6009E0241 /* UseCase */,
 				42A8F27A1F88C0260050305F /* ViewController */,
 				42A8F2661F88B1450050305F /* Wireframe */,
@@ -393,7 +393,7 @@
 				42F9DA1C1F8BE6F1005E28B0 /* Moya */,
 				4258B43D1F8A617100F9A5A1 /* ImgurApiProtocol.swift */,
 			);
-			name = API;
+			path = API;
 			sourceTree = "<group>";
 		};
 		42E6CBE01F8942DB009E0241 /* Resources */ = {
@@ -403,16 +403,16 @@
 				42C4AB7C1F88AE0B000D4282 /* Assets.xcassets */,
 				42E6CBE11F8945DE009E0241 /* Errors.swift */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		42F9DA1C1F8BE6F1005E28B0 /* Moya */ = {
 			isa = PBXGroup;
 			children = (
-				42E6CBDE1F8941CE009E0241 /* ImgurMoya.swift */,
 				42F9DA1D1F8BE6FD005E28B0 /* ApiMoya.swift */,
+				42E6CBDE1F8941CE009E0241 /* ImgurMoya.swift */,
 			);
-			name = Moya;
+			path = Moya;
 			sourceTree = "<group>";
 		};
 		42F9DA211F8BE725005E28B0 /* json */ = {
@@ -420,7 +420,7 @@
 			children = (
 				42F9DA1F1F8BE723005E28B0 /* cats.json */,
 			);
-			name = json;
+			path = json;
 			sourceTree = "<group>";
 		};
 		8905CAA1DBFDF76D9A7B8A85 /* Frameworks */ = {

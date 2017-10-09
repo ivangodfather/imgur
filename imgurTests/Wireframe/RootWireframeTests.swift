@@ -31,6 +31,12 @@ class RootWireframeTests: XCTestCase {
         
         sut.showFirstViewController()
         
-        expect(self.uiWindow.rootViewController).to(equal(listVC))
+        let vc = self.uiWindow.rootViewController
+        expect(vc).to(beAKindOf(UINavigationController.self))
+        XCTAssertTrue(vc is UINavigationController)
+
+        if let navVC = vc as? UINavigationController {
+            expect(navVC.viewControllers.first).to(equal(listVC))
+        }
     }
 }
